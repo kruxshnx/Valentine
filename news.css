@@ -79,13 +79,13 @@ body {
   @keyframes topFadeOut {
     0% {
       position: absolute;
-      top: -3rem;
+ 
       opacity: 0;
     }
   
     75% {
       position: absolute;
-      top: 25%;
+
       opacity: 1;
     }
   
@@ -97,13 +97,13 @@ body {
   @keyframes bottomFadeOut {
     0% {
       position: absolute;
-      bottom: -5rem;
+
       opacity: 0;
     }
   
     75% {
       position: absolute;
-      bottom: 25%;
+
       opacity: 1;
     }
   
@@ -115,13 +115,13 @@ body {
   @keyframes topFadeOutVertical {
     0% {
       position: absolute;
-      top: -3rem;
+    
       opacity: 0;
     }
   
     75% {
       position: absolute;
-      top: 45%;
+    
       opacity: 1;
     }
   
@@ -133,13 +133,11 @@ body {
   @keyframes rightFadeInOut {
     0% {
       position: absolute;
-      right: -3rem;
       opacity: 0;
     }
   
     75% {
       position: absolute;
-      right: 10rem;
       opacity: 1;
     }
   
