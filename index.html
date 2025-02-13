@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Letter 💌</title>
+    <link rel="stylesheet" href="Style3.css" />
+    <style>
+      /* Styling the button */
+      .click-button {
+        display: inline-block;
+        padding: 12px 24px;
+        font-size: 18px;
+        color: white;
+        background-color: #ff4d6d;
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+
+      .click-button:hover {
+        background-color: #e63950;
+      }
+
+      /* Fixing the First Heart */
+      .heart {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        position: relative;
+        margin: auto;
+        transform: rotate(-45deg);
+        animation: beat 1.2s infinite alternate ease-in-out;
+      }
+
+      .heart::before,
+      .heart::after {
+        content: "";
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+      }
+
+      .heart::before {
+        top: -25px;
+        left: 0;
+      }
+
+      .heart::after {
+        top: 0;
+        left: 25px;
+      }
+
+      /* Beating animation */
+      @keyframes beat {
+        0% {
+          transform: scale(1) rotate(-45deg);
+        }
+        50% {
+          transform: scale(1.2) rotate(-45deg);
+        }
+        100% {
+          transform: scale(1) rotate(-45deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="envelope">
+      <div class="back"></div>
+      <div class="letter">
+        <div class="heart"></div> <!-- FIXED Heart -->
+        <div class="text">
+          <p>
+            Hi Vaishamma ❤️ <br />
+            I wrote a letter for you, <br />
+            This is for you 👉
+          </p>
+        </div>
+      </div>
+      <div class="front"></div>
+      <div class="top"></div>
+      <div class="shadow"></div>
+      <div class="text1">
+        <h2>Hey! Listen I Have Something For You</h2>
+      </div>
+    </div>
+
+    <br />
+    <button class="click-button" onclick="window.location.href='news.html';">
+      Click Here, My Love 💖
+    </button>
+  </body>
+</html>
