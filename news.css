@@ -59,7 +59,7 @@ body {
 }
 
 .fifth-text {
-    bottom: 5%;
+     top: 40%;
     animation: topFadeOut 9s 20s;
     color: #f0eba3;
 }
