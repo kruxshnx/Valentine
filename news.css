@@ -3,6 +3,7 @@ body {
     background: black;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 /* Responsive Container */
@@ -15,7 +16,7 @@ body {
     position: relative;
 }
 
-/* Adjusting Text Sizes for Different Screens */
+/* Ensuring Text is Fully Visible */
 .first-text,
 .second-text,
 .third-text,
@@ -24,13 +25,14 @@ body {
     font-size: clamp(1.5rem, 4vw, 2.4rem); /* Responsive text */
     position: absolute;
     left: 5%;
-    width: 90%;
+    max-width: 90%;
     opacity: 0;
     text-align: center;
     word-wrap: break-word;
+    word-break: break-word;
 }
 
-/* Animation Timing Adjustments */
+/* Adjusting Position for Visibility */
 .first-text {
     top: 10%;
     animation: topFadeOut 7s;
@@ -38,25 +40,26 @@ body {
 }
 
 .second-text {
-    top: 20%;
+    top: 25%;
     animation: rightFadeInOut 8s 5s;
     color: #ccc;
 }
 
+/* FIX: Ensuring Third Text is Fully Visible */
 .third-text {
-    top: 30%;
+    top: 40%; /* Increased from 30% */
     animation: topFadeOutVertical 8s 9.5s;
     color: #a3ddf0;
 }
 
 .fourth-text {
-    top: 40%;
+    top: 55%; /* Adjusted for better spacing */
     animation: fadeInOut 9s 16.5s;
     color: #f0a3be;
 }
 
 .fifth-text {
-    bottom: 10%;
+    bottom: 5%;
     animation: topFadeOut 9s 20s;
     color: #f0eba3;
 }
