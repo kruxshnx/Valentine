@@ -8,7 +8,7 @@ body {
 
 /* Responsive Container */
 .animation-box {
-    width: 95%;
+    width: 45%;
     height: 90vh; /* Adjusted for mobile */
     background-color: black;
     margin: 0 auto;
